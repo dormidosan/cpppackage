@@ -6,8 +6,8 @@ class HardProcess
 {
 
 
-    public static  function getDetails()
+    public static  function getDetails($greeting, $quantity, $product, $multiplier, $receiver)
     {
-        echo "Hello from laravel FOLKS";
+        echo "Hello " . $greeting . " " .  ($quantity * $multiplier) . " " . $product . " for " . " my " . $receiver;
     }
 }
