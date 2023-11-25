@@ -1,0 +1,17 @@
+{
+    "name": "dormidosan/cpppackage",
+    "description": "This is the external package created for CPP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Dormidosan\\Cpppackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dormidosan",
+            "email": "metahuargen@gmail.com"
+        }
+    ],
+    "require": {}
+}
