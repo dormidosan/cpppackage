@@ -1,12 +1,12 @@
 <?php
 
-namespace HardProcess;
+namespace GetMarks;
 
 class HardProcess
 {
 
 
-    public function getDetails()
+    public static  function getDetails()
     {
         echo "Hello from laravel FOLKS";
     }
