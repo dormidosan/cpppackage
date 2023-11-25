@@ -1,6 +1,6 @@
 <?php
 
-namespace cpp;
+namespace HardProcess;
 
 class HardProcess
 {
