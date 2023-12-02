@@ -4,6 +4,22 @@ namespace GetMarks;
 
 class HardProcess
 {
+    private $endpointApi;
+
+
+    public function __construct($endpoint)
+    {
+        $this->endpointApi = $endpoint;
+    }
+
+    public function getEndpointApi()
+    {
+        return $this->endpointApi;
+    }
+    public function setEndpointApi($value)
+    {
+        $this->endpointApi = $value;
+    }
 
 
     public static  function getDetails($greeting, $quantity, $product, $multiplier, $receiver)
@@ -12,10 +28,10 @@ class HardProcess
     }
 
 
-    public static function getObject($response, $API)
+    public function getObject($response)
     {
         $flights = [];
-        if ($API == 'rapidapi') {
+        if ($this->endpointApi == 'rapidapi') {
             $flights = self::rapidAPI($response);
         } else {
             // ANY OTHER API FOR THE FUTURE
@@ -26,7 +42,7 @@ class HardProcess
     }
 
 
-    private static function rapidAPI($response)
+    private function rapidAPI($response)
     {
 
 
